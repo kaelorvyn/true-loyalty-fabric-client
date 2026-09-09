@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:trident",
+      "count": 1
+    },
+    "title": {
+      "text": "海神三叉戟？",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "第一次将真·忠诚附魔在三叉戟上",
+      "color": "gray"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/block/chiseled_quartz_block.png"
+  },
+  "criteria": {
+    "enchanted": {
+      "trigger": "minecraft:enchanted_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:trident",
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "bloodsoil:true_loyalty"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enchanted"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

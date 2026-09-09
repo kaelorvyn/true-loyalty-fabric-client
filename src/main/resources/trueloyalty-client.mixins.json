@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.bloodsoil.trueloyaltyclient.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "InGameOverlayRendererMixin",
+    "AnvilScreenHandlerMixin",
+    "EnchantmentScreenHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

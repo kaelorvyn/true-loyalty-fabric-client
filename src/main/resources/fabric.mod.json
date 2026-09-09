@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "trueloyalty-client",
+  "version": "${version}",
+  "name": "True Loyalty Client",
+  "description": "真·忠诚客户端视觉：屏幕中央旋转动画强制显示三叉戟",
+  "authors": [
+    "Blood & Soil"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.bloodsoil.trueloyaltyclient.TrueLoyaltyServer"
+    ],
+    "client": [
+      "com.bloodsoil.trueloyaltyclient.TrueLoyaltyClient"
+    ]
+  },
+  "mixins": [
+    "trueloyalty-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.11",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
